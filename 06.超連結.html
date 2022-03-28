@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(156, 58, 58);
+      }
+      a:visited {
+        /* 已經照訪過 */
+        background-color: rgb(75, 172, 62);
+      }
+      a:focus {
+        /* tab鍵(外面有藍框)、 也可以用在表單*/
+        background-color: rgb(32, 55, 189);
+      }
+      a:hover {
+        /* 摸到*/
+        background-color: rgb(181, 86, 222);
+      }
+      /* focus跟hover有優權順序問題，如果把hover放在前面、focus放在後面，hover的設定會被focus蓋掉，導致沒有效果 */
+
+      a:active {
+        /* 按下 */
+        background-color: rgb(233, 233, 26);
+      }
+      /* hover跟active有優權順序問題，如果把active放在前面、hover放在後面，active的設定會被hover蓋掉，導致沒有效果 */
+    </style>
+  </head>
+  <body>
+    <a>a</a>
+    <a href>a href</a>
+    <a href="">a href</a>
+    <a href="">a href</a>
+    <a href="">a href</a>
+    <a href="">a href</a>
+  </body>
+</html>
+
+<!-- https://dotblogs.com.tw/joysdw12/2011/01/07/20651 參考資料 -->

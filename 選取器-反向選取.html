@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body :not(:first-child, :last-child) {
+        background-color: rgb(240, 138, 138); */
+      /* 最後一個沒選到是因為vscode自動加<script> */
+      /* } */
+    </style>
+    <!-- body :not(h3)  不要選到body底下的h3-->
+    <!-- body :not(:first-child,:last-child)  不要選到body底下的每一層的 第一個跟最後一個 物件  ＊＊注意,瀏覽器不一定支援 注意：要空格喔-->
+  </head>
+  <body>
+    <div>div</div>
+    <span
+      >span
+      <span>span01</span>
+      <span>span02</span>
+    </span>
+    <span>span</span>
+    <h3>h3</h3>
+    <h3>h3</h3>
+    <h3>h3</h3>
+    <h3>h3</h3>
+    <h3>h3</h3>
+    <div>div</div>
+    <span>span</span>
+    <span>span</span>
+  </body>
+</html>

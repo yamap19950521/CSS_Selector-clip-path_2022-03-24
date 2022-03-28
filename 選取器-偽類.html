@@ -1,0 +1,43 @@
+<!-- a:link 
+a:visited 
+a:focus 
+a:hover 
+a:active 
+selection 選取文字有做用
+
+a:first-child 每一層的 第一的子物件又是<a>才選得到
+
+ a:last-child   每一層的 最後的子物件又是<a>才選得到
+    #注意live server會自動程式碼<script>容易選不到最後一個子物件
+
+ body div:last-of-type   每一層的 最後的子物件是<body> 下面的<div>又是才選得一層的 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:first-child {
+        background-color: rgb(226, 17, 17);
+      }
+      div:first-child {
+        background-color: rgb(226, 17, 17);
+      }
+      div:last-child {
+        background-color: rgb(189, 117, 117);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">a</a>
+    <div>
+      div
+      <div class="div">div2</div>
+    </div>
+    <a href="#">a</a>
+    <div class="div">div2</div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!-- @keyframes 劇本-->
+<!-- amimation 有八個屬性 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes amos {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: 300px;
+        }
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(247, 36, 36);
+        position: relative;
+        animation-name: amos;
+        animation-duration: 1s;
+        animation-delay: 3s;
+        animation-direction: reverse;
+        animation-iteration-count: 1;
+        /* animation-fill-mode: ;  播放的生命週期*/
+        animation-play-state: rounding;
+        animation-fill-mode: backward;
+
+        /* Animation-name:
+        Animation-duration:動畫時間Animation-delay:
+        Animation-timing-function:linear 原本有加減速，設定均速
+        Animation-integration-count:預設0% -> 100%
+        Reverse 100% -> 0%
+        Alternate 0% -> 100% -> 0% -> 100% (這個算兩次)
+        Alternate-reverse 100% -> 0% -> 100% -> 0% (這個算兩次)
+
+
+        Animation-direction:alternate */
+        /* animation-play-state: rounding(播放)/paused(暫停) */
+        /* animation-fill-mode 播放的生命週期 : forwards停在動畫結束的地方;  :backward 動畫delay的時候先做0%的設定:backwards;   both*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

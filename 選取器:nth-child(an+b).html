@@ -1,0 +1,193 @@
+<!-- nth都一樣，a&b自訂，n:0~無限大 -->
+<!-- :nth-child(an+b/an/n+b/an-b/-an+b) -->
+
+<!-- 4往前選(包括4) -n+4 -->
+<!-- 選4以後(包括4）n+4  -->
+<!-- a個裡面的第b個 -->
+<!-- 用於表格不同色彩 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      li {
+        width: 100px;
+        height: 100px;
+        list-style-type: none;
+        background-color: rgb(157, 156, 156);
+        margin: 4px;
+        font-size: 60px;
+      }
+      li:nth-child(3n + 1) {
+        background-color: rgb(138, 81, 81);
+      }
+
+      table td:nth-child(3n + 2) {
+        background-color: rgb(55, 65, 142);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <table border="1">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 2</th>
+        <th>Header 2</th>
+        <th>Header 2</th>
+        <th>Header 2</th>
+        <th>Header 2</th>
+      </tr>
+
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+
+      <tr>
+        <td>row 2, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 2, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+
+      <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+      </tr>
+    </table>
+  </body>
+</html>
